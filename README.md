@@ -4,7 +4,6 @@
   </a>
 </p>
 
-
 <p align="center">
     <a href="https://packagist.org/packages/laravel/breeze">
         <img src="https://img.shields.io/packagist/dt/laravel/breeze" alt="Total Downloads">
