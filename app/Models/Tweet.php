@@ -4,13 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Tweet extends Model
 {
     use HasFactory;
 
-// protected $fillable = ['user_id', 'content'];
+    // protected $fillable = ['user_id', 'content'];
 // protected $guarded = [];
 
-
+    public function user() : BelongsTo
+    {
+        // Eloquent relation to User table
+        return $this->belongsTo(User::class);
+    }
 }

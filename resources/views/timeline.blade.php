@@ -7,6 +7,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            {{-- Create Tweet Form --}}
             <div class="card bg-white">
                 <div class="card-body">
                     <form action="{{ route('tweets.store') }}" method="POST">
@@ -17,6 +18,17 @@
                     </form>
                 </div>
             </div>
+
+            {{-- Show Tweet to Browser --}}
+            @foreach ($tweets as $tweet)
+                <div class="card my-4 bg-white text-slate-800">
+                    <div class="card-body">
+                        <h2 class="text-md font-bold">{{ $tweet->user->name }}</h2>
+                        <p class="text-md">{{ $tweet->content }}</p>
+                        <p class="text-end text-xs">{{ $tweet->created_at->diffForHumans() }}</p>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
 </x-app-layout>
