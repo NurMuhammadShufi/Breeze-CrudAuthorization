@@ -15,7 +15,7 @@
                         @method('put')
                         <textarea name="content" rows="3" class="textarea textarea-bordered w-full bg-white text-slate-800"
                             placeholder="apa yang anda pikirkan?">{{ $tweet->content }}</textarea>
-                        <input type="submit" value="Edit" class="btn btn-primary">
+                        <input type="submit" value="Edit" class="btn btn-primary btn-sm">
                     </form>
                 </div>
             </div>
