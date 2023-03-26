@@ -26,8 +26,10 @@
                         <h2 class="text-md font-bold">{{ $tweet->user->name }}</h2>
                         <p class="text-md">{{ $tweet->content }}</p>
                         <div class="text-end ">
-                            <a href="{{ route('tweets.edit', $tweet->id) }}"
-                                class=" font-semibold text-sm link-primary bg-primary text-white p-2 rounded-md transition duration-500 hover:text-slate-900 hover:bg-slate-100">Edit</a>
+                            @can('update', $tweet)
+                                <a href="{{ route('tweets.edit', $tweet->id) }}"
+                                    class=" font-semibold text-sm link-primary bg-primary text-white p-2 rounded-md transition duration-500 hover:text-slate-900 hover:bg-slate-100">Edit</a>
+                            @endcan
                             <span class="text-xs">{{ $tweet->created_at->diffForHumans() }}</span>
                         </div>
                     </div>
