@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://laravel.com" target="_blank">
-    <img src="resources/assets/logo/logo-no-background.png">
+  <a href="https://laravel.com/docs/10.x/starter-kits#laravel-breeze" target="_blank">
+    <img src="public/build/assets/logo/logo-no-background.png">
   </a>
 </p>
 
