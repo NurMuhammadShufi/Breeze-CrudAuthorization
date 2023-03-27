@@ -14,7 +14,7 @@
                         @csrf
                         <textarea name="content" rows="3" class="textarea textarea-bordered w-full bg-white text-slate-800"
                             placeholder="apa yang anda pikirkan?"></textarea>
-                        <input type="submit" value="Tweet" class="btn btn-primary btn-sm text-lowercase">
+                        <input type="submit" value="Tweet" class="btn btn-primary btn-sm text-lowercase mt-4">
                     </form>
                 </div>
             </div>

@@ -17,6 +17,7 @@
     },
     "dependencies": {
         "concurrently": "^7.6.0",
-        "daisyui": "^2.51.5"
+        "daisyui": "^2.51.5",
+        "tailwind-scrollbar": "^3.0.0"
     }
 }
